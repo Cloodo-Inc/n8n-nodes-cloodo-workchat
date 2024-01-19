@@ -181,7 +181,7 @@ export class cloodoworkchat implements INodeType {
         outputs: ['main'],
         credentials: [
             {
-                name: 'cloodoworkchatapi',
+                name: 'cloodoApi',
                 required: true,
             },
         ],

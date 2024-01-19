@@ -30,7 +30,7 @@
   "n8n": {
 		"n8nNodesApiVersion": 1,
 		"credentials": [
-			"dist/credentials/cloodoworkchatapi.credentials.js"
+			"dist/credentials/CloodoApi.credentials.js"
     ],
     "nodes": [
 			"dist/nodes/cloodoworkchat/cloodoworkchat.node.js"

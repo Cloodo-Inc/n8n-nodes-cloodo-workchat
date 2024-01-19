@@ -222,9 +222,9 @@ export class cloodoworkchat implements INodeType {
             //     ],									
             // }
         ],
-        displayName: 'cloodoworkchat',
+        displayName: 'Cloodo WorkChat',
         name: 'cloodoworkchat',
-        icon: 'file:cloodo.png',
+        icon: 'file:logo-cloodo-64x64.png',
         group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

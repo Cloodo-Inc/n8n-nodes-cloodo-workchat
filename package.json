@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-cloodoworkchat",
+  "name": "@cloodo/n8n-nodes-cloodo-workchat",
 	"version": "0.1.0",
 	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
 	"keywords": [

@@ -10,23 +10,23 @@ export class cloodoworkchat implements INodeType {
                 noDataExpression: true,
                 options: [
                     {
-                        name: 'Get list user chat',
+                        name: 'Get List User Chat',
                         value: 'Getlistuserchat',
                     },
                     {
-                        name: 'Get detail message with user id',
+                        name: 'Get Detail Message with User ID',
                         value: 'Getdetailmessagewithuserid',
                     },
                     {
-                        name: 'Get list contact user chat with role',
+                        name: 'Get List Contact User Chat with Role',
                         value: 'Getlistcontactuserchatwithrole',
                     },
                     {
-                        name: 'Send message',
+                        name: 'Send Message',
                         value: 'Sendmessage',
                     },
                 ],
-                default: 'Get list user chat',
+                default: 'Getlistuserchat',
             },
             // Operations will go here
             {
@@ -74,7 +74,7 @@ export class cloodoworkchat implements INodeType {
                         name: 'Get',
                         value: 'get',
                         action: 'Get detail message with user id',
-                        description: 'Get detail message with user id',
+                        description: 'Get detail message with user ID',
                         routing: {
                             request: {
                                 method: 'GET',
@@ -102,7 +102,7 @@ export class cloodoworkchat implements INodeType {
                         name: 'Get',
                         value: 'get',
                         action: 'Get list contact user chat with role',
-                        description: 'Get detail message with user id',
+                        description: 'Get detail message with user ID',
                         routing: {
                             request: {
                                 method: 'GET',
@@ -114,7 +114,7 @@ export class cloodoworkchat implements INodeType {
                 default: 'get',
             },
             {
-                displayName: 'ID user', // The value the user sees in the UI
+                displayName: 'ID User', // The value the user sees in the UI
                 name: 'user_id', // The name used to reference the element UI within the code
                 type: 'string',
                 required: true, // Whether the field is required or not
@@ -169,7 +169,7 @@ export class cloodoworkchat implements INodeType {
         ],
         displayName: 'Cloodo WorkChat',
         name: 'cloodoworkchat',
-        icon: 'file:logo-cloodo-64x64.png',
+        icon: 'file:logo-cloodo-64x64.png',// eslint-disable-line
         group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

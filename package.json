@@ -1,19 +1,19 @@
 {
-  "name": "@cloodo/n8n-nodes-cloodo-workchat",
-	"version": "0.1.0",
-	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
-	"keywords": [
-		"n8n-community-node-package"
+  "name": "@printcart/n8n-nodes-workchat",
+  "version": "0.1.7",
+  "description": "this is workchat node",
+  "keywords": [
+    "n8n-community-node-package"
   ],
   "license": "MIT",
-	"homepage": "https://n8n.io",
-	"author": {
-		"name": "Test",
-		"email": "test@example.com"
+  "homepage": "Printcart.com",
+  "author": {
+    "name": "Printcart.com",
+    "email": "hieuwork.com@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloodoadmin/n8n-nodes-cloodo-workchat.git"
+    "url": "https://github.com/Printcart/n8n-nodes-printcart.git"
   },
   "main": "index.js",
   "scripts": {
@@ -28,12 +28,12 @@
     "dist"
   ],
   "n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/CloodoApi.credentials.js"
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/WorkchatTokenApi.credentials.js"
     ],
     "nodes": [
-			"dist/nodes/cloodoworkchat/cloodoworkchat.node.js"
+      "dist/nodes/Workchat/Workchat.node.js"
     ]
   },
   "devDependencies": {

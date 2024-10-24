@@ -99,4 +99,17 @@ export const listOperations: INodeProperties[] = [
 // entry
 export const listFields: INodeProperties[] = [
 	// Add later if have any change in the future
+	{
+		displayName: 'Page',
+		name: 'page',
+		type: 'number',
+		default: 1,
+		displayOptions: {
+			show: {
+				resource: ['list'],
+				operation: ['getContactList'],
+			},
+		},
+		description: 'Page of list',
+	},
 ];

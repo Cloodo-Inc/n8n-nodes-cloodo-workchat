@@ -148,12 +148,13 @@ export class Workchat implements INodeType {
 						returnData.push(responseData);
 					}
 					if (operation === 'getContactList') {
+						const page = this.getNodeParameter('page', i) as number;
 						const options: OptionsWithUri = {
 							headers: {
 								Accept: 'application/json',
 							},
 							method: 'GET',
-							uri: `https://erp-amz.cloodo.com/v4/messages/list-contact-chat`,
+							uri: `https://erp-amz.cloodo.com/v4/messages/list-contact-chat?per_page=10&page=${page}`,
 							json: true,
 						};
 						responseData = await this.helpers.requestWithAuthentication.call(
